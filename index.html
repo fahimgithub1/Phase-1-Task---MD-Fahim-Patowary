@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fahim Patowary(Job Test)</title>
+        <link rel="shortcut icon" href="./Cvpic1.png" type="image/x-icon">
+
+        <!-- Font awsome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+        <!-- css File link -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body style="margin: auto; text-align: center;">
+
+        <Form >
+            <h1 class="titel">Age Calculator</h1>
+            <div>
+                <h3 class="date-title">Date of Birth:<span>(Year/Mounth/Day)</span></h3>
+                <input id="valuyearsold"  placeholder="Year"> 
+                    <select class="selctor" id="valumounthold" name="cars">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                <!-- <input id="valumounthold" placeholder="mounth">  -->
+                <!-- <input id="evaludaysold" placeholder="days">  -->
+                    <select class="selctor" id="evaludaysold" name="cars">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+            </div>
+            <br>
+            <div>
+                <h3 class="date-title">Current  Date: <span>(Year/Mounth/Day)</span> </h3>
+                <input id="valuyearsnew" placeholder="Year"> 
+                <select class="selctor" id="valumounthnew" name="cars">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <!-- <input id="valumounthnew" placeholder="mounth">  -->
+                <!-- <input id="evaludaysnew" placeholder="days">  -->
+                <select class="selctor" id="evaludaysnew" name="cars">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+            </div>
+            <br>
+            <button onClick="claculatesyeas()">GO <i class="fa fa-arrow-right"></i></button>
+        </Form>
+
+
+        <script type="text/javascript">
+
+            function claculatesyeas(){
+                let oyears = document.getElementById("valuyearsold").value;
+                var omounths = document.getElementById("valumounthold").value;
+                var odayse = document.getElementById("evaludaysold").value;
+
+                
+                var nyears = document.getElementById("valuyearsnew").value;
+                var nmounths = document.getElementById("valumounthnew").value;
+                var ndayse = document.getElementById("evaludaysnew").value;
+
+                if((omounths == 2 && odayse > 28) || (nmounths == 2 && ndayse > 28)){
+                    alert("mounth 2 isn't allow avobe 28 days. days  are Wrong!")
+                }else{
+                    // For Days 
+                    if(ndayse < odayse){
+                        ndayse = (+ndayse) + 31;
+                        nmounths = (+nmounths) - 1;
+                        rdays = (+ndayse) - (+odayse);
+                    }else{
+                        rdays = (+ndayse) - (+odayse);
+                    }
+
+                    // For Mouhth 
+                    if(nmounths < omounths){
+                        nmounths = (+nmounths) + 12;
+                        nyears = (+nyears) - 1;
+                        rmounths = (+nmounths) - (+omounths);
+                    }else{
+                        rmounths = (+nmounths) - (+omounths);
+                    }
+
+                    // For Years
+                    ryears = (+nyears) - (+oyears);
+
+                    if(oyears > 0 && nyears > 0 ){
+                        alert("Year/Mounth/Days : " + ryears+ "/" +rmounths+ "/" +rdays);
+                    }else{
+                        alert("!!!!!!Enter value Years!!!!!");
+                    }
+                }
+                
+                
+            }
+
+        </script>
+
+
+    </body>
+</html>

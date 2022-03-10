@@ -1,0 +1,68 @@
+body{
+    padding-top: 5.7rem;
+    background-image: url(./onecalendar.jpg);
+    background-size: cover;
+}
+
+Form{
+    background-color: rgb(22, 117, 10);
+    width: 60%;
+    margin: auto;
+    padding-top: .3rem;
+    padding-bottom: 2.5rem;
+    border-radius: 20px;
+    color: white;
+}
+
+.titel{
+    color: rgb(166, 255, 0);
+}
+
+Form > div{
+    margin: auto;
+    width: 70%;
+}
+
+div h3{
+    text-align: left;
+    margin: 0;
+    padding-left: .47rem;
+}
+
+.date-title span{
+    font-size: 12px;
+}
+
+input{
+    height: 25px;
+    border-radius: 7px;
+    border: 1.5px solid black;
+}
+
+.selctor{
+    height: 29px;
+    width: 170px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1.5px solid black;
+}
+
+button{
+    width: 100px;
+    height: 35px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: .5px solid rgb(255, 255, 255);
+    background-color: rgb(22, 117, 10);
+    box-shadow: .0px .0px 5px .5px wheat;
+    color: rgb(189, 189, 189);
+}
+
+button:hover{
+    background-color: rgb(99, 65, 2);
+    width: 80px;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+}
