@@ -1,5 +1,5 @@
 body{
-    padding-top: 5.7rem;
+    padding-top: 6%;
     background-image: url(./onecalendar.jpg);
     background-size: cover;
 }
@@ -19,14 +19,15 @@ Form{
     font-weight: bolder;
     width: 30%;
     margin: auto;
-    background-color: aliceblue;
+    background-color: rgb(230, 235, 240, 0.3);
+    font-family: Bahnschrift;
+    font-size: 54px;
 }
 
 Form > div{
     margin: auto;
     width: 70%;
 }
-
 
 div h3{
     text-align: left;
