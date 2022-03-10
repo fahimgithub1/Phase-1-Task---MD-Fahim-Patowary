@@ -8,14 +8,18 @@ Form{
     background-color: rgb(22, 117, 10);
     width: 60%;
     margin: auto;
-    padding-top: .3rem;
-    padding-bottom: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     border-radius: 20px;
     color: white;
 }
 
 .titel{
-    color: rgb(166, 255, 0);
+    color: rgb(146, 72, 2);
+    font-weight: bolder;
+    width: 30%;
+    margin: auto;
+    background-color: aliceblue;
 }
 
 Form > div{
