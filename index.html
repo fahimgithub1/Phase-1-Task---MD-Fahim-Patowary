@@ -14,8 +14,9 @@
     </head>
 
     <body style="margin: auto; text-align: center;">
-          
-            <h1 class="titel">Age Calculator</h1>
+        
+        <h1 class="titel">Age Calculator</h1>
+
         <Form >
             <div>
                 <h3 class="date-title">Date of Birth:<span>(Year/Mounth/Day)</span></h3>
@@ -139,7 +140,6 @@
                 let oyears = document.getElementById("valuyearsold").value;
                 var omounths = document.getElementById("valumounthold").value;
                 var odayse = document.getElementById("evaludaysold").value;
-
                 
                 var nyears = document.getElementById("valuyearsnew").value;
                 var nmounths = document.getElementById("valumounthnew").value;
@@ -166,8 +166,18 @@
                         rmounths = (+nmounths) - (+omounths);
                     }
 
+                    if(rdays >= 30){
+                        rdays = (+rdays) - 31;
+                        rmounths = (+rmounths) + 1;
+                    }
+
                     // For Years
                     ryears = (+nyears) - (+oyears);
+
+                    if(rmounths >= 12){
+                        ryears = (+ryears) + 1;
+                        rmounths = (+rmounths) - 12;
+                    }
 
                     if(oyears > 0 && nyears > 0 ){
                         alert("Year/Mounth/Days : " + ryears+ "/" +rmounths+ "/" +rdays);
